@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Layout</title>
+    <link rel="stylesheet" href="112207437_HW7.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- 左側面板 -->
+        <div class="left-panel">
+            <div class="photo-panel">
+                <img src="https://github.com/wendy437/112207437_HW4/blob/main/my_photo.jpeg?raw=true" alt="個人照片" style="width: 100%;">
+            </div>
+            <div class="text-content">
+                <div class="name-section">
+                    <h1 id="name-display">YUHSUAN HSU</h1>
+                    <button id="edit-name">edit</button>
+                </div>
+                <div class="about-me"> 
+                    <h2>About Me</h2>
+                    <p>
+                        I am a sophomore in the Department of Land Economics at National Chengchi University. I enjoy programming and studying computer science fundamentals.
+                    </p>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact</h3>
+                    <a href="mailto:112207437@g.nccu.edu.com">112207437@g.nccu.edu.com</a>
+                </div>
+                <div class="nccu-icon">
+                    <img src="https://github.com/wendy437/112207437_HW4/blob/main/nccu_logo.png?raw=true" alt="學校標誌" style="width: 150px;">
+                </div>
+            </div>
+        </div>
+
+        <!-- 右側面板 -->
+        <div class="right-panel">
+
+            <!-- 教育背景 -->
+            <section class="education">
+                <h2>Education</h2>
+                <br><br>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="year">2023 Sep. - Now</span>
+                        <span class="description">National Chengchi University, Department of LE</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">2020 Sep. - 2023 Jun.</span>
+                        <span class="description">Taipei Municipal High School, Photography Club</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">2017 Sep. - 2020 Jun.</span>
+                        <span class="description">Middle School Graduation</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 作業連結列表 -->
+            <section class="homework-list">
+                <h2>Homework List</h2>
+                <br><br>
+                <ul>
+                    <li>HW1 -  <a href="https://github.com/wendy437/112207437_HW1.git">https://github.com/wendy437/112207437_HW1.git</a></li>
+                    <br><br>
+                    <li>HW2 -  <a href="https://github.com/wendy437/112207437_HW2.git">https://github.com/wendy437/112207437_HW2.git</a></li>
+                    <br><br>
+                    <li>HW3 -  <a href="https://github.com/wendy437/112207437_HW3.git">https://github.com/wendy437/112207437_HW3.git</a></li>
+                    <br><br>
+                    <li>HW4 -  <a href="https://github.com/wendy437/112207437_HW4.git">https://github.com/wendy437/112207437_HW4.git</a></li>
+                    <br><br>
+                    <li>HW5 -  <a href="https://github.com/wendy437/112207437_HW5.git">https://github.com/wendy437/112207437_HW5.git</a></li>
+                    <br><br>
+                    <li>HW6 -  <a href="https://github.com/wendy437/112207437_HW6.git">https://github.com/wendy437/112207437_HW6.git</a></li>
+            </section>
+
+            <!-- 最愛音樂列表 -->
+            <section class="favorite-music">
+                <h2>Favorite Music</h2>
+                <div class="music-grid" id="music-grid">
+                    <div class="music-item">
+                        <a href="https://www.youtube.com/watch?v=ZNjgQmVIZfI" target="_blank">
+                            <img src="https://github.com/wendy437/112207437_HW4/blob/main/spotify_icon.png?raw=true" alt="Song 1">
+                        </a>
+                        <p>不在乎</p>
+                    </div>
+                    <div class="music-item">
+                        <a href="https://youtu.be/WIBFnmY2YrA?si=1WAZO5LY5dBs-37n" target="_blank">
+                            <img src="https://github.com/wendy437/112207437_HW4/blob/main/spotify_icon.png?raw=true" alt="Song 2">
+                        </a>
+                        <p>笑忘歌</p>
+                    </div>
+                    <div class="music-item">
+                        <a href="https://youtu.be/ft0ITHgYj04?si=2cOZ-MeGtcEY9b2-" target="_blank">
+                            <img src="https://github.com/wendy437/112207437_HW4/blob/main/spotify_icon.png?raw=true" alt="Song 3">
+                        </a>
+                        <p>四不像</p>
+                    </div>
+                    <div class="music-item">
+                        <a href="https://youtu.be/bWx-vtCSg0w?si=tKgu_E53I9sVcQJ3" target="_blank">
+                            <img src="https://github.com/wendy437/112207437_HW4/blob/main/spotify_icon.png?raw=true" alt="Song 4">
+                        </a>
+                        <p>大藝術家</p>
+                    </div>
+                </div>
+            </section>
+            <!-- 新增音樂功能 -->
+            <section class="add-music-section">
+                <button id="add-music">add</button>
+                <div id="music-form" style="display: none;">
+                    <input type="text" id="music-link" placeholder="Music Link">
+                    <input type="text" id="music-name" placeholder="Music Name">
+                    <button id="submit-music">Submit</button>
+                </div>
+                <br><br>
+                <p class="note">Note：Lorem ipsum dolor sit amet consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+            </section>
+        </div>
+    </div>
+
+    <script src="112207437_HW7.js"></script>
+</body>
+</html>

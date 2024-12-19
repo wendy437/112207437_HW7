@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    transform: scale(0.9);
+    transform-origin: top center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.main-container {
+    display: grid;
+    grid-template-columns: 330px 540px;
+    width: 900px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Left Panel */
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    height: 1150px;
+    background-color: #333;
+    color: #fff;
+}
+
+.photo-panel {
+    background-image: url('profile-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+}
+
+.text-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.text-content h2, .text-content h3 {
+    margin-bottom: 10px;
+}
+
+.about-me {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 14px;
+}
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #fff;
+}
+
+.nccu-icon img {
+    width: 100px;
+    align-self: center;
+}
+/* Right Panel */
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 90%;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Section Styling */
+section {
+    padding: 10px 0;
+}
+
+section h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+
+.timeline .timeline-item {
+    margin-bottom: 10px;
+}
+
+.timeline .year {
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+}
+
+.timeline .description {
+    display: inline-block;
+}
+
+.homework-list {
+    position: relative;
+    top: -20px;
+}
+
+.homework-list ul {
+    list-style: none;
+}
+
+.homework-list a {
+    color: #AAAAAA;
+    text-decoration: none;
+}
+
+.homework-list a {
+    color: #888888;
+    text-decoration: none;
+}
+
+.favorite-music {
+    text-align: left;
+}
+
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin: 20px 0;
+}
+
+.music-item {
+    text-align: center;
+}
+
+.music-item img {
+    width: 50px;
+    height: auto;
+}
+
+.music-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+.add-music-section .note {
+    text-align: left;
+    font-size: 12px;
+    color: #666;
+}
